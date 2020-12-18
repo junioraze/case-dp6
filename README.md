@@ -43,23 +43,23 @@ por recomendação da Google de carregar esses componentes o quanto antes na pá
 Com exceção do evento de exibição do pop-up, todos os outros eventos foram implementados nesse arquivo js. 
 
 #### Pontos importantes
-    1. Eventos de todas as páginas
+1. Eventos de todas as páginas
        descrição: Estes eventos foram implementados fora dos blocos 
 				  de código if (location.pathname == pathname) pois estao presentes em todas as páginas
        tipo_evento: Foi adicionado um evento do tipo "click" para executar o envio do evento pelo objeto ga sempre que o elemento for clicado
 
-    2. analise.html
-       descrição: Os elementos dessa pagina foram inseridos em um array e seus eventos criados dinâmicamente com um foreach
+2. analise.html
+   descrição: Os elementos dessa pagina foram inseridos em um array e seus eventos criados dinâmicamente com um foreach
 				  onde o rotulo que é dinâmico recebe valor de item.querySelector('.card-title').innerText
-       tipo_evento: Foi adicionado um evento do tipo "click" para executar o envio do evento pelo objeto ga sempre que o elemento for clicado
+   tipo_evento: Foi adicionado um evento do tipo "click" para executar o envio do evento pelo objeto ga sempre que o elemento for clicado
 
-    3. sobre.html
-       descrição: Os elementos dessa pagina foram inseridos em um array e seus eventos criados dinâmicamente com um foreach onde o rotulo que é dinâmico recebe valor de item.id (com exceção do evento do popup)
-       tipo_evento: Foi adicionado um evento do tipo "change" para executar o envio do evento pelo objeto ga, o "change" atende ao solicitado pois é ativado no momento que o elemento perde o foco (ou seja, quando o usuario termina de digitar e troca o input)
+3. sobre.html
+   descrição: Os elementos dessa pagina foram inseridos em um array e seus eventos criados dinâmicamente com um foreach onde o rotulo que é dinâmico recebe valor de item.id (com exceção do evento do popup)
+   tipo_evento: Foi adicionado um evento do tipo "change" para executar o envio do evento pelo objeto ga, o "change" atende ao solicitado pois é ativado no momento que o elemento perde o foco (ou seja, quando o usuario termina de digitar e troca o input)
 	   
-    4. sobre.html evento popup
-       descrição: Esse evento foi inserido no arquivo main.js após a inserção da classe 'lightbox-open' no body da página. Optei por fazer dessa forma, porque a outra opção que tinha pensado era em por um evento no butao do form do tipo "submit", só que o submit trigga antes do pop aparecer o que não condiz com a regra de negócio.
-       tipo_evento: hard-coding, trigga com o submit do form após inserir a classe de visualização do pop-up
+4. sobre.html evento popup
+   descrição: Esse evento foi inserido no arquivo main.js após a inserção da classe 'lightbox-open' no body da página. Optei por fazer dessa forma, porque a outra opção que tinha pensado era em por um evento no butao do form do tipo "submit", só que o submit trigga antes do pop aparecer o que não condiz com a regra de negócio.
+   tipo_evento: hard-coding, trigga com o submit do form após inserir a classe de visualização do pop-up
     
 
 
