@@ -1,6 +1,6 @@
-# Sparkfy ETL Song Json Data ETL
+# CASE DP6
 
-## Sumary
+## Sumário
         1. Visao Geral
         2. Arquivos HTML
         3. tagueamento.js
@@ -54,14 +54,11 @@ Com exceção do evento de exibição do pop-up, todos os outros eventos foram i
        tipo_evento: Foi adicionado um evento do tipo "click" para executar o envio do evento pelo objeto ga sempre que o elemento for clicado
 
     3. sobre.html
-       descrição: Os elementos dessa pagina foram inseridos em um array e seus eventos criados dinâmicamente com um foreach
-				  onde o rotulo que é dinâmico recebe valor de item.id (com exceção do evento do popup)
-       tipo_evento: Foi adicionado um evento do tipo "change" para executar o envio do evento pelo objeto ga, 
-					o "change" atende ao solicitado pois é ativado no momento que o elemento perde o foco (ou seja, quando o usuario termina de digitar e troca o input)
+       descrição: Os elementos dessa pagina foram inseridos em um array e seus eventos criados dinâmicamente com um foreach onde o rotulo que é dinâmico recebe valor de item.id (com exceção do evento do popup)
+       tipo_evento: Foi adicionado um evento do tipo "change" para executar o envio do evento pelo objeto ga, o "change" atende ao solicitado pois é ativado no momento que o elemento perde o foco (ou seja, quando o usuario termina de digitar e troca o input)
 	   
     4. sobre.html evento popup
-       descrição: Esse evento foi inserido no arquivo main.js após a inserção da classe 'lightbox-open' no body da página. Optei por fazer dessa forma, porque a outra opção
-				  que tinha pensado era em por um evento no butao do form do tipo "submit", só que o submit trigga antes do pop aparecer o que não condiz com a regra de negócio.
+       descrição: Esse evento foi inserido no arquivo main.js após a inserção da classe 'lightbox-open' no body da página. Optei por fazer dessa forma, porque a outra opção que tinha pensado era em por um evento no butao do form do tipo "submit", só que o submit trigga antes do pop aparecer o que não condiz com a regra de negócio.
        tipo_evento: hard-coding, trigga com o submit do form após inserir a classe de visualização do pop-up
     
 
@@ -74,7 +71,6 @@ O site será executado na porta 5000 e você pode acessar com localhost:5000
 
 ### 5. Agradecimentos e ressalvas
 
-## Agradeço a toda equipe da DP6 pela participação do processo seletivo e a execução desse case. Nunca tinha atuado com google analytics e tenho uma experiência
-## bem pontual com javascript, adorei a vivência de fazer essa implementação e se possível gostaria de um feedback de como implementar o evento do popup de uma forma mais elegante.
+## Agradeço a toda equipe da DP6 pela participação do processo seletivo e a execução desse case. Nunca tinha atuado com google analytics e tenho uma experiência bem pontual com javascript, adorei a vivência de fazer essa implementação e se possível gostaria de um feedback de como implementar o evento do popup de uma forma mais elegante.
 
 ### Abraços!
